@@ -1,0 +1,156 @@
+/* General Container */
+.product-list-container {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding: 0 20px; /* Add padding for smaller screens */
+  }
+  
+  /* Title */
+  .product-list-title {
+    font-family: "Avenir Book", sans-serif;
+    font-size: 36px;
+    font-weight: normal;
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
+  
+  /* Responsive title */
+  @media (max-width: 768px) {
+    .product-list-title {
+      font-size: 28px; /* Reduce font size for tablets and smaller screens */
+      margin-top: 50px;
+      margin-bottom: 30px;
+    }
+  }
+  
+  /* Carousel Container */
+  .carousel-container {
+    position: relative;
+    width: 100%;
+  }
+  
+  /* Carousel Group */
+  .carousel-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  /* Make carousel group responsive */
+  @media (max-width: 768px) {
+    .carousel-group {
+      gap: 5px; /* Reduce spacing for smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .carousel-group {
+      flex-wrap: wrap; /* Wrap items for very small screens */
+      gap: 5px;
+    }
+  }
+  
+  /* Carousel Arrows */
+  .carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .prev-arrow {
+    left: 15px;
+  }
+  
+  .next-arrow {
+    right: 15px;
+  }
+  
+  /* Adjust arrow size on smaller screens */
+  @media (max-width: 768px) {
+    .carousel-arrow {
+      font-size: 20px; /* Smaller arrow size */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .carousel-arrow {
+      font-size: 18px;
+    }
+  }
+  
+  /* Slider Container */
+  .slider-container {
+    position: relative;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Custom Slider */
+  .custom-slider {
+    width: 80%;
+    appearance: none;
+    height: 10px;
+    border-radius: 5px;
+    background: linear-gradient(to right, #d3d3d3, #999);
+    outline: none;
+    cursor: pointer;
+  }
+  
+  .custom-slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 200px;
+    height: 10px;
+    background: #888;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .custom-slider::-moz-range-thumb {
+    width: 200px;
+    height: 10px;
+    background: #888;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .custom-slider::-ms-thumb {
+    width: 200px;
+    height: 10px;
+    background: #888;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Responsive slider */
+  @media (max-width: 768px) {
+    .custom-slider {
+      width: 90%; /* Wider slider for smaller screens */
+    }
+  
+    .custom-slider::-webkit-slider-thumb,
+    .custom-slider::-moz-range-thumb,
+    .custom-slider::-ms-thumb {
+      width: 150px; /* Reduce thumb size for smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .custom-slider {
+      width: 100%; /* Full width for very small screens */
+    }
+  
+    .custom-slider::-webkit-slider-thumb,
+    .custom-slider::-moz-range-thumb,
+    .custom-slider::-ms-thumb {
+      width: 120px; /* Further reduce thumb size for very small screens */
+    }
+  }
+  
